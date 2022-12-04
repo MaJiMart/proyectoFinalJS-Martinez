@@ -1,4 +1,4 @@
-/* //Primer intento:
+/* //Opción 1:
 //Saludo de bienvenida a la página Productos
 const bienvenidaProductos = (nombreIngresado) => {
     alert("Bienvenida/o " + nombreIngresado + ", estas en nuestra página de productos");
@@ -6,7 +6,7 @@ const bienvenidaProductos = (nombreIngresado) => {
 let nombreIngresado = prompt("Hola, ¿Cómo te llamas?");
 bienvenidaProductos(nombreIngresado);
 
-//Opciones de compraE
+//Opciones de compra
 let opcion1 = "mates";
 let opcion2 = "cuencos";
 
@@ -28,7 +28,7 @@ for (let i = 1; i <= 4; i++) {
 }  */
 
 
-//Segundo intento:
+//Opción 2:
 let usuario = "Sofia";
 
 function saludo() {
@@ -59,7 +59,7 @@ if (usuarioIn) {
     let opciones = prompt(usuario + ",\nSi querés saber el precio de los mates ingresa: MATES \nSi querés saber el precio de los cuencos ingresa: CUENCOS \nSi querés realizar un pedido, ingresa: PEDIDO \nDe lo contrario ingresa ESC para salir");
 
     while (opciones != "ESC") {
-        switch (opciones) {
+        switch (opciones.toLocaleUpperCase()) {
             case "MATES":
                 alert("El mate personalizado sale $" + precioMate);
                 break;
@@ -80,4 +80,3 @@ if (usuarioIn) {
     alert("Para crearte un usuario debes ingresar en...");
 }
 alert("Gracias por visitar nuestra web, si queres mantenerte al tanto de las novedades seguinos en nuestras redes sociales. \nQue tengas un lindo día.");
-
