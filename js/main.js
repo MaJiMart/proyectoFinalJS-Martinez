@@ -29,7 +29,7 @@ for (let i = 1; i <= 4; i++) {
 
 
 //Segundo intento:
-let usuario = "Sofia"
+let usuario = "Sofia";
 
 function saludo() {
     let ingresar = false;
@@ -42,7 +42,7 @@ function saludo() {
             ingresar = true;
             break;
         } else {
-            alert("Recuerda que para acceder a la sección de Productos debes crear un usuario e ingresar con el nombre que te has registrado")
+            alert("Recuerda que para acceder a la sección de Productos debes crear un usuario e ingresar con el nombre que te has registrado");
         }
     }
     return ingresar;
@@ -56,7 +56,7 @@ if (usuarioIn) {
     let precioMate = 3000;
     let precioCuenco = 5200;
 
-    let opciones = prompt(usuario + ",\nSi querés saber el precio de los mates ingresa: MATES \nSi querés saber el precio de los cuencos ingresa: CUENCOS \nSi querés realizar un pedido, ingresa: PEDIDO \nDe lo contrario ingresa ESC para salir")
+    let opciones = prompt(usuario + ",\nSi querés saber el precio de los mates ingresa: MATES \nSi querés saber el precio de los cuencos ingresa: CUENCOS \nSi querés realizar un pedido, ingresa: PEDIDO \nDe lo contrario ingresa ESC para salir");
 
     while (opciones != "ESC") {
         switch (opciones) {
@@ -79,4 +79,5 @@ if (usuarioIn) {
 } else{
     alert("Para crearte un usuario debes ingresar en...");
 }
-alert("Gracias por visitar nuestra web, si queres mantenerte al tanto de las novedades seguinos en nuestras redes sociales. \nQue tengas un lindo día.")
+alert("Gracias por visitar nuestra web, si queres mantenerte al tanto de las novedades seguinos en nuestras redes sociales. \nQue tengas un lindo día.");
+
