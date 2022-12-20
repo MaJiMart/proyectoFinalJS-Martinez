@@ -1,33 +1,3 @@
-/* //Opción 1:
-//Saludo de bienvenida a la página Productos
-const bienvenidaProductos = (nombreIngresado) => {
-    alert("Bienvenida/o " + nombreIngresado + ", estas en nuestra página de productos");
-}
-let nombreIngresado = prompt("Hola, ¿Cómo te llamas?");
-bienvenidaProductos(nombreIngresado);
-
-//Opciones de compra
-let opcion1 = "mates";
-let opcion2 = "cuencos";
-
-//Precios
-let precioMate = 3000;
-let precioCuenco = 2500;
-
-for (let i = 1; i <= 4; i++) {
-    let precios = prompt("¿Querés saber los precios de...? \nMates \nCuencos");
-    if (precios === "Mates") {
-        alert("Los " + opcion1 + " " + "salen" + " " + "$" + precioMate);
-        break;
-    } else if (precios === "Cuencos") {
-        alert("Los " + opcion2 + " " + "salen" + " " + "$" + precioCuenco);
-        break;
-    } else {
-        alert("¡uups! \nPor favor indica una de las opciones anteriores para que podamos ayudarte");
-    }
-}  */
-
-//Opción 2:
 class Usuario {
     constructor(nombre, apellido, email, telefono, provincia, pais) {
         this.nombre = nombre;
