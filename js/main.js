@@ -23,7 +23,6 @@ arrayUsuarios.push(new Usuario("SOFIA", "Teran", "algun@email", "388 65326557", 
 arrayUsuarios.push(new Usuario("AGUSTIN", "Marigliano", "algun@email", "385 69145557", "Santiago del Estero", "Argentina"));
 
 
-
 function saludo() {
     let ingresar = false;
 
@@ -35,12 +34,14 @@ function saludo() {
             break;
         } else {
             alert("Recuerda que para acceder a la sección de Productos debes crear un usuario e ingresar con el nombre que te has registrado");
+            break;
         }
     }
     return ingresar;
 }
 
 let usuarioIn = saludo();
+
 
 //Dentro de Productos
 if (usuarioIn) {
@@ -69,6 +70,24 @@ if (usuarioIn) {
         opciones = prompt("Si querés saber el precio de los mates ingresa: MATES \nSi querés saber el precio de los cuencos ingresa: CUENCOS \nSi querés realizar un pedido, ingresa: PEDIDO \nDe lo contrario ingresa ESC para salir");
     }
 } else {
-    alert("Para crearte un usuario debes ingresar en...");
+    alert("Próximamente habilitaremos la sección para crear tu usuario.");
+    
+/*     let crear = true;
+
+    while (crear) {
+        let newUser = prompt("Para crear tu usuario por favor ingresa tus datos: nombre, apellido, email, telefono, provincia y pais, separados por una barra diagonal (/). \nPor ejemplo: Gaston/Fernandez/tuemail@email/383 5477521/Catamarca/Argentina.\nIngresa X para finalizar");
+        
+        let datos = newUser.split('/');
+
+        console.log(datos);
+
+        arrayUsuarios.push(new Usuario(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5]));
+
+        if (newUser.toUpperCase() == 'X') {
+            saludo();
+            break;
+        }
+    } */
 }
+
 alert("Gracias por visitar nuestra web, si queres mantenerte al tanto de las novedades seguinos en nuestras redes sociales. \nQue tengas un lindo día.");
