@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Registro">
+    <meta name="keywords" content="login inicio sesion Munay microemprendimiento tucuman argentina ">
+    <link rel="shortcut icon" href="../assets/img/icono1.ico">
+    <title>Munay - Inicia Sesión</title>
+    <!--link google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Raleway:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" href="../scss/style.css">
+    <!--logica js-->
+    <script defer src="../js/registro.js"></script>
+</head>
+
+<body>
+    <div class="estructuraContactame">
+        <header>
+            <div>
+                <a href="../index.html"><img src="../assets/img/munayTerracota.png" alt="logo munay"></a>
+            </div>
+            <!--codigo para menu hamburguesa-->
+            <input type="checkbox" id="menuCheck">
+            <label id="menu" for="menuCheck">
+                <span id="menuAbrir">&#9776;</span>
+                <span id="menuCerrar">X</span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./conocenos.html">Conocenos</a></li>
+                    <li><a href="./sabias.html">Sabías...?</a></li>
+                    <li><a href="./contactame.html">Contáctame</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Accede a tu cuenta</h2>
+            <section>
+                <!--formulario de acceso-->
+                <div>
+                    <form action="#" autocomplete="off">
+                        
+                        <div>
+                            <input type="email" name="Email" placeholder="Email" class="campo" id="campoEmail">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Contraseña" class="campo" id="campoPass">
+                        </div>
+                        <span><input type="checkbox"  value="recuerdame" id="remember" alt="enviar formulario" /> Recuérdame</span>
+                        <input type="submit" value="Ingresar" id="btnLogin" alt="iniciar sesion" />
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>· Munay ·</p>
+                <p>Productos hechos con amor</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./conocenos.html">Conocenos</a></li>
+                    <li><a href="./sabias.html">Sabías...?</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contactame.html">Contáctame</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>Tucumán - Argentina</p>
+                <p>©Munay. Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

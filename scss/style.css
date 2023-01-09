@@ -1,0 +1,976 @@
+@charset "UTF-8";
+/*color texto de la nav*/
+/*etiquetas h1, h2 y texto de cards y footer*/
+/*textos de la web*/
+/*boton enviar y menu desplegable*/
+/*llamativo - usado en los h3, boton de enviar y línea separación*/
+/*bordes de formulario*/
+/*footer background-color*/
+/*cards background-color*/
+/*menu background-color*/
+/*hover boton enviar*/
+/*tipos de fuentes de la web*/
+/*fuente general de la web*/
+/*fuente cursiva para titulos*/
+/*estilos para cards*/
+/*para Media Query de 1024*/
+/*para Media Query de 768*/
+/*para Media Query de 480*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.estructuraIndex {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+}
+
+.estructuraProductos {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 6fr 0.5fr;
+}
+
+.estructuraConocenos {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+}
+
+.estructuraSabias {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 6.5fr 0.5fr;
+}
+
+.estructuraContactame {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+}
+
+body {
+  background-image: url("../assets/img/background.png");
+  width: 98.9vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  grid-area: header;
+  height: 25vh;
+  width: 98.5vw;
+}
+header div {
+  padding: 0.5rem;
+  width: 45%;
+  align-items: center;
+}
+header div img {
+  width: 15vw;
+  margin-left: 1vw;
+}
+header nav {
+  width: 97vw;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+header nav ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  align-content: space-between;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #B82312;
+}
+header nav ul li a:hover {
+  color: #041E02;
+}
+
+/*menu hamburguesa*/
+#menu,
+#menuCheck {
+  display: none;
+}
+
+/*estilos de todos los contenedores*/
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  grid-area: main;
+}
+
+.mainIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 90vw;
+}
+.mainIndex .bienvenidos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  height: 80%;
+}
+.mainIndex .bienvenidos .btnPedidos {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.mainIndex .formulario#acceso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 80%;
+}
+.mainIndex .formulario#acceso h2 {
+  margin-bottom: 3vh;
+}
+.mainIndex .formulario#acceso form div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5vh;
+}
+.mainIndex input#btnLogin {
+  align-items: center;
+  margin: 1.5vh 0vh 1.5vh 0vh;
+}
+.mainIndex p {
+  display: flex;
+  justify-content: center;
+}
+
+/*conocenos.html*/
+.solana {
+  margin: 0 3vw 0 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.munay {
+  margin: 0 3vw 0 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*productos.html*/
+.mates, .cuencos {
+  width: 98.9vw;
+}
+.mates .boxMates, .cuencos .boxMates, .cuencos .boxCuencos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+  background-color: rgba(255, 99, 51, 0.3215686275);
+  width: 15vw;
+  height: 45vh;
+  margin: 3rem;
+  padding: 0.7rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.mates .boxMates .cardMates img, .cuencos .boxMates .cardMates img, .cuencos .boxCuencos .cardMates img, .cuencos .boxCuencos .cardCuencos img {
+  border-radius: 10px;
+}
+
+.sabias {
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*contactame.html*/
+.contForm {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contForm .izquierda {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.contForm .izquierda .pedidos {
+  margin: 0 3vw 3vh 1vw;
+}
+.contForm .izquierda .redes {
+  margin: 3vh 3vw 2vh 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/*estilos de todas las etiquetas h*/
+h1 {
+  width: 90vw;
+  color: #041E02;
+  font-size: 3.5rem;
+  font-family: "Clicker Script", cursive;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  width: 90vw;
+  color: #041E02;
+  font-size: 2rem;
+  font-family: "Raleway";
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+
+.mainIndex h1 {
+  width: 50vw;
+  color: #041E02;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "Clicker Script", cursive;
+}
+.mainIndex h2 {
+  color: #041E02;
+  width: 50vw;
+  font-size: 1rem;
+  font-family: "Raleway";
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainIndex #acceso h2 {
+  font-size: 1.5rem;
+}
+
+.h2Conocenos {
+  margin: 3rem 3rem 0rem 5rem;
+}
+
+.sabias h1 {
+  width: 90vw;
+}
+.sabias h2 {
+  width: 90vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.mates h2, .cuencos h2 {
+  width: 80vw;
+  margin-left: 3vw;
+}
+.mates div h3, .cuencos div h3 {
+  color: #041E02;
+}
+
+.cuencos h2 {
+  width: 80vw;
+  margin-left: 3vw;
+}
+.cuencos div h3 {
+  color: #041E02;
+}
+
+.contactame h2 {
+  width: 85%;
+  font-size: 2rem;
+  margin-left: 3vw;
+}
+.contactame .contForm h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
+  font-weight: 400;
+  color: #FF6333;
+}
+
+/*index html*/
+.mainIndex span {
+  font-size: 1rem;
+}
+.mainIndex p {
+  font-size: 0.8rem;
+}
+.mainIndex p a {
+  margin-left: 0.1rem;
+  color: #FF6333;
+}
+
+/*conocenos.html*/
+.solana p {
+  color: #345911;
+  margin: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2.5rem;
+}
+
+.munay p {
+  color: #345911;
+  margin: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2.5rem;
+}
+
+/*productos.html*/
+.mates div p, .cuencos div p {
+  color: #041E02;
+  text-align: center;
+}
+
+.cuencos div p {
+  color: #041E02;
+  text-align: center;
+}
+
+/*contactame.html*/
+.pedidos p {
+  color: #345911;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+
+/*estilos de todo lo relacionado con fotos y videos*/
+.solana img {
+  width: auto;
+  height: 45vh;
+  border-radius: 20%;
+  opacity: 85%;
+}
+
+.munay img {
+  width: auto;
+  height: 45vh;
+  border-radius: 20%;
+}
+
+.carousel {
+  width: 50%;
+  margin: 0 0 5vh 0;
+}
+
+.sabias {
+  width: 98vw;
+}
+.sabias .video {
+  padding: 1vh 0 5vh 0;
+  display: flex;
+  justify-content: center;
+}
+.sabias .video iframe {
+  width: 60vw;
+  border-radius: 10px;
+}
+
+.mates div img, .cuencos div img {
+  width: auto;
+  height: 25vh;
+}
+
+.cuencos div img {
+  width: auto;
+  height: 25vh;
+}
+
+.redes i {
+  color: grey;
+  margin: 0.5vh 0.5vw 0 1.5vw;
+  width: 3rem;
+  height: auto;
+  cursor: pointer;
+}
+.redes i:hover {
+  color: #345911;
+}
+
+.redes i:hover {
+  color: #345911;
+}
+
+.formulario {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-left: double 0.5rem #FF6333;
+}
+
+#acceso {
+  border: none;
+}
+#acceso .campo {
+  background: none;
+  width: 20rem;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-bottom: solid grey;
+}
+
+#formRegistro {
+  border: none;
+}
+#formRegistro .campo {
+  background: none;
+  width: 20rem;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-bottom: solid grey;
+}
+
+.contForm form .campo,
+.contForm form textarea {
+  width: 20rem;
+  padding: 15px 10px;
+  font-size: 1rem;
+  border: solid grey;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  outline: 0;
+}
+.contForm form textarea {
+  max-width: 20rem;
+  min-width: 20rem;
+  min-height: 10rem;
+  max-width: 12rem;
+}
+
+.btnPedidos {
+  padding: 8%;
+}
+.btnPedidos button {
+  padding: 1rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  border-radius: 5rem;
+  border-color: #345911;
+  border-style: solid;
+  cursor: pointer;
+}
+.btnPedidos button a {
+  color: #345911;
+  text-decoration: none;
+}
+.btnPedidos button:hover {
+  transform: scale(1.2);
+}
+
+.formulario #btnLogin {
+  width: 93%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  background: #FF6333;
+  color: #EBDBC9;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.formulario #btnLogin:hover {
+  background: rgba(255, 99, 51, 0.5215686275);
+}
+.formulario #btnRegistro {
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  background: #FF6333;
+  color: #EBDBC9;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.formulario #btnRegistro:hover {
+  background: rgba(255, 99, 51, 0.5215686275);
+}
+
+.contForm .btnEnviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  background: #FF6333;
+  color: #EBDBC9;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.contForm .btnEnviar:hover {
+  background: rgba(255, 99, 51, 0.5215686275);
+}
+
+footer {
+  background-color: rgba(203, 191, 191, 0.6117647059);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-area: footer;
+  height: 25vh;
+  width: 98.9vw;
+}
+footer div {
+  width: 100%;
+  padding: 1rem;
+}
+footer div p {
+  align-items: center;
+  line-height: 1.5rem;
+  color: #041E02;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+footer nav {
+  width: 97vw;
+  display: flex;
+  justify-content: center;
+}
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 35vw;
+  align-items: center;
+}
+footer nav ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #041E02;
+}
+footer nav ul li a:hover {
+  color: #B82312;
+}
+
+.footerIndex {
+  width: 100vw;
+}
+
+.footerSabias {
+  height: 30vh;
+}
+.footerSabias div p {
+  line-height: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    display: none;
+  }
+  .mainIndex {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    width: 25vw;
+    height: 45vh;
+    margin: 2rem;
+    padding: 1rem;
+  }
+  .carousel {
+    width: 80%;
+  }
+  .sabias h2 {
+    width: 90%;
+    margin: 0;
+    padding: 1rem;
+    margin-left: 4rem;
+  }
+  .contForm .formulario {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*menu hamburguesa*/
+  #menuCheck:not(:checked) ~ nav {
+    display: none;
+  }
+  #menuCheck:checked ~ nav {
+    display: block;
+  }
+  #menu {
+    display: block;
+    color: #B82312;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 2rem;
+  }
+  #menuCerrar {
+    display: none;
+  }
+  #menuCheck:checked ~ label #menuAbrir {
+    display: none;
+  }
+  #menuCheck:checked ~ label #menuCerrar {
+    display: block;
+  }
+  header div img {
+    width: 40vw;
+  }
+  header nav {
+    position: absolute;
+    top: 9rem;
+    right: 0;
+    height: 50vh;
+    width: 35vw;
+    background-color: rgba(184, 35, 18, 0.8431372549);
+    border-radius: 10px;
+    color: #EBDBC9;
+    z-index: 9999;
+  }
+  header nav ul {
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+  }
+  header nav ul li {
+    display: block;
+    text-align: right;
+    margin-top: 3rem;
+  }
+  header nav ul li a {
+    color: #EBDBC9;
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 1rem;
+    line-height: 3rem;
+  }
+  main {
+    height: 50vh;
+    width: 96vw;
+  }
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    width: 40vw;
+    height: 40vh;
+    margin: 2rem;
+  }
+  .solana {
+    display: block;
+  }
+  .solana div {
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .solana div p {
+    font-size: 1.5rem;
+  }
+  .h2Conocenos h2 {
+    width: 85vw;
+    text-align: center;
+  }
+  .munay {
+    margin-top: 0;
+    display: block;
+  }
+  .munay div {
+    width: 96vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .munay div p {
+    font-size: 1.5rem;
+  }
+  .contForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contForm .izquierda {
+    width: 90%;
+    order: 2;
+  }
+  .contForm .izquierda .pedidos {
+    margin: 1rem;
+    order: 2;
+  }
+  .contForm .izquierda .pedidos p {
+    font-size: 1.5rem;
+  }
+  .contForm .izquierda .redes {
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    order: 1;
+  }
+  .contForm .formulario {
+    width: 90%;
+    margin: 3rem 0 0 6rem;
+    padding: 0;
+    justify-content: center;
+    border: none;
+    order: 1;
+  }
+  .redes,
+.formulario {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 480px) {
+  .estructuraIndex {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.5fr 2fr;
+  }
+  .estructuraProductos {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.1fr 6fr;
+  }
+  .estructuraConocenos {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.1fr 4fr;
+  }
+  .estructuraSabias {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.5fr 6.5fr;
+  }
+  .estructuraContactame {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.5fr 3fr;
+  }
+  #menu {
+    font-size: 1.5rem;
+  }
+  header div img {
+    width: 60vw;
+  }
+  header nav {
+    top: 15vh;
+    height: 43vh;
+    width: 50vw;
+    text-align: right;
+  }
+  header nav ul li {
+    margin-top: 1.7rem;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1rem;
+  }
+  .mainIndex h1 {
+    color: #041E02;
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .mainIndex h2 {
+    color: #041E02;
+    width: 50%;
+    margin-top: 1rem;
+    font-size: 0.65rem;
+    text-align: center;
+  }
+  .mainIndex .btnPedidos button {
+    padding: 0.5rem;
+    width: 8rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+    align-items: center;
+  }
+  .mainIndex .btnPedidos button:hover {
+    transform: none;
+  }
+  main h1 {
+    margin-left: 2rem;
+    text-align: center;
+  }
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    width: 80vw;
+    height: 60vh;
+    margin: 4rem;
+  }
+  .mates .boxMates .cardMates img, .cuencos .boxMates .cardMates img, .cuencos .boxCuencos .cardMates img, .cuencos .boxCuencos .cardCuencos img {
+    height: 35vh;
+  }
+  .solana {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .solana div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .solana div img {
+    margin: 0;
+    height: 18rem;
+  }
+  .solana div {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .solana div p {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .h2Conocenos {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    width: 85%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .h2Conocenos {
+    margin: 0.5rem;
+  }
+  .munay {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .munay div img {
+    height: 20rem;
+  }
+  .munay div p {
+    margin: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .carousel {
+    width: 90%;
+  }
+  .sabias h1 {
+    width: 90%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .sabias h2 {
+    width: 90%;
+    padding: 0;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .video {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  body h1 {
+    width: 85%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .mates, .cuencos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mates .boxMates .cardMates, .cuencos .boxMates .cardMates, .cuencos .boxCuencos .cardMates, .cuencos .boxCuencos .cardCuencos {
+    margin: 1rem;
+  }
+  .mates h2, .cuencos h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  .contactame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactame .contForm {
+    margin: 2vh 0 0 0;
+    padding: 0;
+  }
+  .contactame .contForm .izquierda {
+    width: 95vw;
+    order: 2;
+  }
+  .contactame .contForm .izquierda .pedidos {
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .contactame .contForm .izquierda .pedidos p {
+    font-size: 1rem;
+  }
+  .contactame .contForm .izquierda .redes {
+    margin: 0 0 6vh 0;
+  }
+  .contactame .contForm .izquierda .redes div a {
+    margin: 1.5rem;
+  }
+  .contactame .contForm .formulario {
+    margin: 0;
+    padding: 0;
+  }
+  .contactame .redes,
+.contactame .formulario {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */

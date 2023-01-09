@@ -1,0 +1,63 @@
+/*index html*/
+.mainIndex{
+    span{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.8rem;
+        a{
+            margin-left: 0.1rem;
+            color: $jazzy;
+        }
+    }
+}
+
+/*conocenos.html*/
+.solana {
+    p {
+        color: $text;
+        margin: 2rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 2.5rem;
+    }
+}
+
+.munay {
+    p {
+        color: $text;
+        margin: 2rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 2.5rem;
+    }
+}
+
+/*productos.html*/
+.mates {
+    div {
+        p {
+            color: $tittles;
+            text-align: center;
+        }
+    }
+}
+
+.cuencos {
+    div {
+        p {
+            color: $tittles;
+            text-align: center;
+        }
+    }
+}
+
+/*contactame.html*/
+.pedidos {
+    p {
+        color: $text;
+        text-align: justify;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+}

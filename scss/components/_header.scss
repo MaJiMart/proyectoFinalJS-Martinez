@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    align-items: center;
+    grid-area: header;
+    height: 25vh;
+    width: 98.5vw;
+
+    div {
+        padding: 0.5rem;
+        width: 45%;
+        align-items: center;
+
+        img {
+            width: 15vw;
+            margin-left: 1vw;
+        }
+    }
+
+    nav {
+        width: 97vw;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 1rem;
+                text-align: center;
+                text-decoration: none;
+                align-content: space-between;
+
+                a {
+                    text-decoration: none;
+                    color: $navtext;
+
+                    &:hover {
+                        color: $tittles;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*menu hamburguesa*/
+#menu,
+#menuCheck {
+    display: none;
+}

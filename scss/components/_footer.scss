@@ -1,0 +1,69 @@
+footer {
+    background-color: $backfooter;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-area: footer;
+    height: 25vh;
+    width: 98.9vw;
+
+    div {
+        width: 100%;
+        padding: 1rem;
+
+        p {
+            align-items: center;
+            line-height: 1.5rem;
+            color: $tittles;
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    nav {
+        width: 97vw;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 35vw;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 1rem;
+                text-align: center;
+                text-decoration: none;
+
+                a {
+                    text-decoration: none;
+                    color: $tittles;
+
+                    &:hover {
+                        color: $navtext;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+.footerIndex {
+    width: 100vw;
+}
+
+.footerSabias {
+    height: 30vh;
+
+    div {
+        p {
+            line-height: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+h1 {
+    width: 90vw;
+    @include tittleStyle ($tittles, 3.5rem, $italic);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    width: 90vw;
+    @include tittleStyle($tittles, 2rem, $webfont);
+    display: flex;
+    align-items: center;
+}
+
+.mainIndex {
+    h1 {
+        width: 50vw;
+        color: $tittles;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: lighter;
+        font-family: $italic;
+    }
+
+    h2 {
+        color: $tittles;
+        width: 50vw;
+        font-size: 1rem;
+        font-family: $webfont;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #acceso{
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.h2Conocenos {
+    margin: 3rem 3rem 0rem 5rem;
+}
+
+.sabias {
+    h1{
+        width: 90vw;
+    }
+    h2 {
+        width: 90vw;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.mates {
+    h2 {
+        width: 80vw;
+        margin-left: 3vw;
+    }
+
+    div {
+        h3 {
+            color: $tittles;
+        }
+    }
+}
+
+.cuencos {
+    h2 {
+        width: 80vw;
+        margin-left: 3vw;
+    }
+
+    div {
+        h3 {
+            color: $tittles;
+        }
+    }
+}
+
+.contactame {
+    h2 {
+        width: 85%;
+        font-size: 2rem;
+        margin-left: 3vw;
+    }
+
+    .contForm {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1vh;
+            font-weight: 400;
+            color: $jazzy;
+        }
+    }
+}

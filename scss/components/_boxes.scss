@@ -1,0 +1,142 @@
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    grid-area: main;
+}
+
+.mainIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 90vw;
+
+    .bienvenidos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 65%;
+        height: 80%;
+        .btnPedidos{
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .formulario#acceso{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 80%;
+        h2{
+            margin-bottom: 3vh;
+        }
+        form div{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5vh;
+        }
+        }
+        input#btnLogin{
+            align-items: center;
+            margin: 1.5vh 0vh 1.5vh 0vh;
+        }
+        p{
+            display: flex;
+            justify-content: center; 
+        }
+    }
+
+
+/*conocenos.html*/
+.solana {
+    margin: 0 3vw 0 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.munay {
+    margin: 0 3vw 0 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*productos.html*/
+.mates {
+    width: 98.9vw;
+
+    .boxMates {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .cardMates {
+            background-color: $backcards;
+            width: map-get($cardStyle, width);
+            height: map-get($cardStyle, height);
+            margin: map-get($cardStyle, margin);
+            padding: map-get($cardStyle, padding);
+            border-radius: map-get($cardStyle, border-radius);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.cuencos {
+    @extend .mates;
+    .boxCuencos{
+        @extend .boxMates;
+        .cardCuencos{
+            @extend .cardMates;
+        }
+    }
+}
+
+.sabias {
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*contactame.html*/
+.contForm {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .izquierda {
+        width: 50%;
+        height: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .pedidos {
+            margin: 0 3vw 3vh 1vw;
+        }
+
+        .redes {
+            margin: 3vh 3vw 2vh 1vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+}

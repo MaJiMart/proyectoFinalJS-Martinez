@@ -1,0 +1,30 @@
+/*estilos para cards*/
+$cardStyle: (
+    width: 15vw,
+    height: 45vh,
+    margin: 3rem,
+    padding: 0.7rem,
+    border-radius: 20px,
+);
+
+/*para Media Query de 1024*/
+$cardStyleQueryL: (
+    width: 25vw,
+    height: 45vh,
+    margin: 2rem,
+    padding: 1rem,
+);
+
+/*para Media Query de 768*/
+$cardStyleQueryM: (
+    width: 40vw,
+    height: 40vh,
+    margin: 2rem,
+);
+
+/*para Media Query de 480*/
+$cardStyleQueryS: (
+    width: 80vw,
+    height: 60vh,
+    margin: 4rem,
+);

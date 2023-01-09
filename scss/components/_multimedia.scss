@@ -1,0 +1,72 @@
+.solana {
+    img {
+        width: auto;
+        height: 45vh;
+        border-radius: 20%;
+        opacity: 85%;
+    }
+}
+
+.munay {
+    img {
+        width: auto;
+        height: 45vh;
+        border-radius: 20%;
+    }
+}
+
+.carousel {
+    width: 50%;
+    margin: 0 0 5vh 0;
+}
+
+.sabias {
+    width: 98vw;
+
+    .video {
+        padding: 1vh 0 5vh 0;
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            width: 60vw;
+            border-radius: 10px;
+        }
+    }
+}
+
+.mates {
+    div {
+        img {
+            width: auto;
+            height: 25vh;
+        }
+    }
+}
+
+.cuencos {
+    div {
+        img {
+            width: auto;
+            height: 25vh;
+        }
+    }
+}
+
+.redes {
+    i {
+        color: $border;
+        margin: 0.5vh 0.5vw 0 1.5vw;
+        width: 3rem;
+        height: auto;
+        cursor: pointer;
+
+        &:hover {
+            color: $text;
+        }
+    }
+}
+
+.redes i:hover {
+    color: $text;
+}

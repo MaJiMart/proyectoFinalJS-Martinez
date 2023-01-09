@@ -1,0 +1,508 @@
+@media screen and (max-width:1024px) {
+    footer {
+        display: none;
+
+    }
+
+    .mainIndex {
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mates {
+        .boxMates {
+            .cardMates {
+                width: map-get($cardStyleQueryL, width);
+                height: map-get($cardStyleQueryL, height);
+                margin: map-get($cardStyleQueryL, margin);
+                padding: map-get($cardStyleQueryL, padding);
+            }
+        }
+    }
+
+    .carousel {
+        width: 80%;
+    }
+
+    .sabias {
+        h2 {
+            width: 90%;
+            margin: 0;
+            padding: 1rem;
+            margin-left: 4rem;
+        }
+    }
+
+    .contForm {
+        .formulario {
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /*menu hamburguesa*/
+    #menuCheck:not(:checked)~nav {
+        display: none;
+    }
+
+    #menuCheck:checked~nav {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        color: $navtext;
+        font-size: 2.5rem;
+        position: absolute;
+        right: 2rem;
+    }
+
+    #menuCerrar {
+        display: none;
+    }
+
+    #menuCheck:checked~label #menuAbrir {
+        display: none;
+    }
+
+    #menuCheck:checked~label #menuCerrar {
+        display: block;
+    }
+
+    header {
+        div {
+            img {
+                width: 40vw;
+            }
+        }
+
+        nav {
+            position: absolute;
+            top: 9rem;
+            right: 0;
+            height: 50vh;
+            width: 35vw;
+            background-color: $backmenu;
+            border-radius: 10px;
+            color: $light;
+            z-index: 9999;
+
+            ul {
+                display: block;
+                text-align: right;
+                margin-top: 1rem;
+
+                li {
+                    display: block;
+                    text-align: right;
+                    margin-top: 3rem;
+
+                    a {
+                        color: $light;
+                        font-size: 1.5rem;
+                        margin: 2rem;
+                        padding: 1rem;
+                        line-height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        height: 50vh;
+        width: 96vw;
+    }
+
+    .mates {
+        .boxMates {
+            .cardMates {
+                width: map-get($cardStyleQueryM, width);
+                height: map-get($cardStyleQueryM, height);
+                margin: map-get($cardStyleQueryM, margin);
+            }
+        }
+    }
+
+    .solana {
+        display: block;
+
+        div {
+            width: 96vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .h2Conocenos {
+        h2 {
+            width: 85vw;
+            text-align: center;
+        }
+    }
+
+    .munay {
+        margin-top: 0;
+        display: block;
+
+        div {
+            width: 96vw;
+            margin: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .contForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .izquierda {
+            width: 90%;
+            order: 2;
+
+            .pedidos {
+                margin: 1rem;
+                order: 2;
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .redes {
+                width: 100%;
+                margin-bottom: 3vh;
+                padding: 0;
+                justify-content: flex-start;
+                align-items: center;
+                order: 1
+            }
+        }
+
+        .formulario {
+            width: 90%;
+            margin: 3rem 0 0 6rem;
+            padding: 0;
+            justify-content: center;
+            border: none;
+            order: 1;
+        }
+    }
+
+    .redes,
+    .formulario {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .estructuraIndex {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.5fr 2fr;
+    }
+
+    .estructuraProductos {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.1fr 6fr;
+    }
+
+    .estructuraConocenos {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.1fr 4fr;
+    }
+
+    .estructuraSabias {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.5fr 6.5fr;
+    }
+
+    .estructuraContactame {
+        display: grid;
+        grid-template-areas: "header"
+            "main";
+        grid-template-rows: 0.5fr 3fr;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+    }
+
+    header {
+        div {
+            img {
+                width: 60vw;
+            }
+        }
+
+        nav {
+            top: 15vh;
+            height: 43vh;
+            width: 50vw;
+            text-align: right;
+
+            ul {
+                li {
+                    margin-top: 1.7rem;
+
+                    a {
+                        font-size: 1rem;
+                        margin: 1rem;
+                        padding: 1rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainIndex {
+        h1 {
+            color: $tittles;
+            margin: 0;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: $tittles;
+            width: 50%;
+            margin-top: 1rem;
+            font-size: 0.65rem;
+            text-align: center;
+        }
+
+        .btnPedidos {
+            button {
+                padding: 0.5rem;
+                width: 8rem;
+                font-size: 1rem;
+                border-radius: 5rem;
+                align-items: center;
+
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    main {
+        h1 {
+            margin-left: 2rem;
+            text-align: center;
+        }
+    }
+
+    .mates {
+        .boxMates {
+            .cardMates {
+                width: map-get($cardStyleQueryS, width);
+                height: map-get($cardStyleQueryS, height);
+                margin: map-get($cardStyleQueryS, margin);
+
+                img {
+                    height: 35vh;
+                }
+            }
+        }
+    }
+
+    .solana {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin: 0;
+                height: 18rem;
+            }
+        }
+
+        div {
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                width: 90%;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    .h2Conocenos {
+        margin: 0;
+        padding: 0;
+        width: 95%;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        width: 85%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .h2Conocenos {
+        margin: 0.5rem
+    }
+
+    .munay {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            img {
+                height: 20rem;
+            }
+        }
+
+        div {
+            p {
+                margin: 1rem 2rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .sabias {
+        h1 {
+            width: 90%;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        h2 {
+            width: 90%;
+            padding: 0;
+            margin: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    .video {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        h1 {
+            width: 85%;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+
+    .mates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .boxMates {
+            .cardMates {
+                margin: 1rem;
+            }
+        }
+
+        h2 {
+            margin: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .contactame {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contForm {
+            margin: 2vh 0 0 0;
+            padding: 0;
+
+            .izquierda {
+                width: 95vw;
+                order: 2;
+
+                .pedidos {
+                    width: 80vw;
+                    margin: 0;
+                    padding: 0;
+                    align-items: center;
+
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+
+                .redes {
+                    margin: 0 0 6vh 0;
+
+                    div {
+                        a {
+                            margin: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .formulario {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .redes,
+        .formulario {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

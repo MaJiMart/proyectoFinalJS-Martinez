@@ -1,0 +1,20 @@
+@import "./variables/colors";
+/*tipos de fuentes de la web*/
+@import "./variables/fonts";
+@import "./variables/maps";
+@import "./variables/mixin";
+@import "./reset/reset";
+@import "./layout/grids";
+@import "./components/body";
+@import "./components/header";
+/*estilos de todos los contenedores*/
+@import "./components/boxes";
+/*estilos de todas las etiquetas h*/
+@import "./components/tittles";
+@import "./components/texts";
+/*estilos de todo lo relacionado con fotos y videos*/
+@import "./components/multimedia";
+@import "./components/form";
+@import "./components/buttons";
+@import "./components/footer";
+@import "./views/queries";
