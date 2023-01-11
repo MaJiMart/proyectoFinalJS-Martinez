@@ -1,4 +1,4 @@
-/* const boxMates = document.querySelector(".boxMates"),
+const boxMates = document.querySelector(".boxMates"),
 boxCuencos = document.querySelector(".boxCuencos");
 
 const mates =[
@@ -21,10 +21,10 @@ const cuencos =[
         return el.nombre.includes(filtro);
     });
     return filtrado;
-} */
+}*/
 
 //Crear HTML
-/*function crearCard (array) {
+function crearCard (array) {
     let html;
     //Construir Card
     for (const mate of array) {
@@ -32,7 +32,7 @@ const cuencos =[
         `<div class="">
         <div class="cardMates">
             <img src="../assets/img/${mate.img}">
-            <span class="nombreMate">${mate.nombre.toUpperCase()}</span>
+            <span class="nombreMate">${mate.nombre}</span>
             <div class="precioMate">
                 <p>$${mate.precio}</p>
             </div>
@@ -49,5 +49,5 @@ const cuencos =[
 //llamar funcion
 crearCard(mates);
 crearCard(cuencos);
-*/
+
 

@@ -38,7 +38,7 @@
         }
     }
     #btnRegistro{
-        width: 25%;
+        width: 35%;
         padding: 10px;
         font-size: 16px;
         border: none;
@@ -71,4 +71,20 @@
             background: $hoversend;
         }
     }
+}
+
+.btnComprar{
+    padding: 10px;
+        font-size: 16px;
+        border: none;
+        outline: 0;
+        background: $jazzy;
+        color: $light;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover {
+            background: $hoversend;
+        }
 }

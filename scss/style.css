@@ -53,6 +53,12 @@
   grid-template-rows: 0.5fr 3fr 0.5fr;
 }
 
+.estructuraRegistro {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 0.5fr 3fr 0.5fr;
+}
+
 body {
   background-image: url("../assets/img/background.png");
   width: 98.9vw;
@@ -232,6 +238,37 @@ main {
   justify-content: flex-end;
 }
 
+.registro h2 {
+  display: flex;
+  justify-content: center;
+}
+.registro section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.registro section .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registro section .formulario #btnRegistro {
+  margin: 1.5rem;
+}
+.registro section .beneficios {
+  width: 40vw;
+  height: 40vh;
+  margin-left: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.registro section .beneficios p {
+  margin-top: 3vh;
+}
+
 /*estilos de todas las etiquetas h*/
 h1 {
   width: 90vw;
@@ -319,6 +356,13 @@ h2 {
   color: #FF6333;
 }
 
+.registro section .formulario h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
+  font-weight: 400;
+  color: #FF6333;
+}
+
 /*index html*/
 .mainIndex span {
   font-size: 1rem;
@@ -365,6 +409,27 @@ h2 {
   text-align: justify;
   font-size: 1rem;
   line-height: 2.5rem;
+}
+
+/*registro.html*/
+.registro .formulario p {
+  color: #345911;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.registro .formulario p a {
+  color: #FF6333;
+}
+.registro .beneficios p {
+  color: #345911;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.registro .beneficios #exitoso {
+  color: #FF6333;
+  text-align: center;
+  font-size: 3rem;
 }
 
 /*estilos de todo lo relacionado con fotos y videos*/
@@ -509,7 +574,7 @@ h2 {
   background: rgba(255, 99, 51, 0.5215686275);
 }
 .formulario #btnRegistro {
-  width: 25%;
+  width: 35%;
   padding: 10px;
   font-size: 16px;
   border: none;
@@ -536,6 +601,21 @@ h2 {
   transition: all 300ms ease;
 }
 .contForm .btnEnviar:hover {
+  background: rgba(255, 99, 51, 0.5215686275);
+}
+
+.btnComprar {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: 0;
+  background: #FF6333;
+  color: #EBDBC9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.btnComprar:hover {
   background: rgba(255, 99, 51, 0.5215686275);
 }
 
