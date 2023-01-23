@@ -73,18 +73,78 @@
     }
 }
 
-.btnComprar{
+/* tienda */
+.btnAddCart{
     padding: 10px;
-        font-size: 16px;
-        border: none;
-        outline: 0;
-        background: $jazzy;
-        color: $light;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 300ms ease;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: $jazzy;
+    color: $light;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
 
-        &:hover {
-            background: $hoversend;
-        }
+    &:hover {
+        background: $hoversend;
+    }
+}
+
+#storeIco{
+    cursor: pointer;
+    
+    &:hover {
+        color: $hoversend;
+    }
+}
+
+#store{
+    display: none;
+}
+
+#vaciarCarrito{
+    margin: 3vh 1.5vw 1.5vh 1.5vw;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: $light;
+    color: $jazzy;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#finCompra{
+    margin: 3vh 1.5vw 1.5vh 1.5vw;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: $light;
+    color: $jazzy;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#eliminar{
+    background:none;
+    border:none;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sumar{
+    background:none;
+    border:none;
+    align-items: center;
+    cursor: pointer;
+}
+
+#restar{
+    background:none;
+    border:none;
+    align-items: center;
+    cursor: pointer;
 }

@@ -161,16 +161,19 @@ main {
         display: flex;
         flex-direction: row;
         align-items: center;
-        .formulario{
+
+        .formulario {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            #btnRegistro{
+
+            #btnRegistro {
                 margin: 1.5rem
             }
         }
-        .beneficios{
+
+        .beneficios {
             width: 40vw;
             height: 40vh;
             margin-left: 5vw;
@@ -178,9 +181,87 @@ main {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            p{
+
+            p {
                 margin-top: 3vh;
             }
         }
     }
+}
+
+/*Selec tienda*/
+.contentModal {
+    width: 50vw;
+    max-height: 55vh;
+    position: absolute;
+    margin: 23vh 7.7vw;
+    top: 0;
+    right: 0;
+    background-color: $backmenu;
+    color: $light;
+    border-radius: 10px;
+    display: none;
+    z-index: 100;
+
+    .modalBody {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+
+        .resumen {
+            margin: 1rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-content: space-around;
+
+            img {
+                width: 8vw;
+                margin-right: 3vw;
+                border-radius: 5px;
+            }
+
+            div {
+                margin: 1vh 0vw vh 0vw;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    margin-right: 1vw;
+                }
+
+                i {
+                    color: $light;
+                    margin-right: 1vw;
+                }
+
+                .canti {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+        }
+    }
+}
+.modalBody::-webkit-scrollbar{
+    width: 7px;
+    }
+
+.modalBody::-webkit-scrollbar-thumb{
+    background-color: $light;
+    border-radius: 5px;
+}
+
+#store:checked~.contentModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#store:not(:checked)~.contentModal {
+    display: none;
 }

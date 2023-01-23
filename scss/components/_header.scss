@@ -19,6 +19,13 @@ header {
     nav {
         width: 97vw;
 
+        #shop{
+            height: 15vh;
+            width: 60vw;
+            justify-content: flex-end;
+            color: $tienda;
+
+        }
         ul {
             display: flex;
             justify-content: space-evenly;

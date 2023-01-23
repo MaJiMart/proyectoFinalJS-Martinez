@@ -1,0 +1,65 @@
+[
+   {
+      "id": 1,
+      "nombre": "Mate K'uychi",
+      "precio": 4500,
+      "img": "mate1-kuychi.jpg",
+      "cantidad": 1
+   },
+   {
+      "id": 2,
+      "nombre": "Mate Pullullu",
+      "precio": 4100,
+      "img": "mate2-pullullu.jpg",
+      "cantidad": 1
+   },
+   {
+      "id": 3,
+      "nombre": "Mate Nuna",
+      "precio": 4150,
+      "img": "mate3-nuna.jpg",
+      "cantidad": 1
+   },
+   {
+      "id": 4,
+      "nombre": "Mate Kulli",
+      "precio": 3900,
+      "img": "mate4-kulli.jpg",
+      "cantidad": 1
+   },
+   {
+      "id": 5,
+      "nombre": "Mate Inti",
+      "precio": 3900,
+      "img": "mate5-inti.jpg",
+      "cantidad": 3
+   },
+   {
+      "id": 6,
+      "nombre": "Mate Kallpa",
+      "precio": 4300,
+      "img": "mate6-kallpa.jpg",
+      "cantidad": 1
+   },
+   {
+      "id": 7,
+      "nombre": "Mate Thiti",
+      "precio": 4200,
+      "img": "mate7-thiti.jpg",
+      "cantidad": 1
+   },
+   {
+      "id": 8,
+      "nombre": "Mate Kusiy",
+      "precio": 4600,
+      "img": "mate8-kusiy.jpeg",
+      "cantidad": 1
+   },
+   {
+      "id": 9,
+      "nombre": "Cuencos Awki",
+      "precio": 5300,
+      "img": "cuencos.jpg",
+      "cantidad": 5
+   }
+]
