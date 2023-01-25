@@ -14,6 +14,12 @@
     }
 }
 
+#notfound{
+    margin-bottom: 1rem;
+    color: $jazzy;
+    font-weight: 800;
+}
+
 /*conocenos.html*/
 .solana {
     p {
@@ -90,6 +96,12 @@
             color: $jazzy;
             text-align: center;
             font-size: 3rem;
+        }
+
+        #ops{
+            color: $jazzy;
+            text-align: center;
+            font-size: 2.5rem;
         }
     }
 }

@@ -452,6 +452,12 @@ h2 {
   color: #FF6333;
 }
 
+#notfound {
+  margin-bottom: 1rem;
+  color: #FF6333;
+  font-weight: 800;
+}
+
 /*conocenos.html*/
 .solana p {
   color: #345911;
@@ -507,6 +513,11 @@ h2 {
   color: #FF6333;
   text-align: center;
   font-size: 3rem;
+}
+.registro .beneficios #ops {
+  color: #FF6333;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 /* tienda */
@@ -604,10 +615,44 @@ h2 {
 #formRegistro .campo {
   background: none;
   width: 20rem;
-  margin: 10px;
+  margin: 10px 5px 10px;
   padding: 5px;
   border: none;
   border-bottom: solid grey;
+}
+#formRegistro .formControl {
+  display: flex;
+  flex-direction: row;
+}
+#formRegistro .formControl div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#formRegistro .formControl div i {
+  visibility: hidden;
+  margin: 3.5px 3.5px 3.5px 0px;
+}
+#formRegistro .formControl div p {
+  color: grey;
+  font-size: 0.8rem;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+#formRegistro .formControlSuccess input {
+  border-color: #345911;
+}
+#formRegistro .formControlSuccess i.fa-check {
+  visibility: visible;
+}
+#formRegistro .formControlError div p {
+  visibility: visible;
+}
+#formRegistro .formControlError div i.fa-exclamation {
+  visibility: visible;
 }
 
 .contForm form .campo,
@@ -628,7 +673,7 @@ h2 {
 }
 
 .btnPedidos {
-  padding: 8%;
+  padding: 8% 5% 3% 5%;
 }
 .btnPedidos button {
   padding: 1rem;
@@ -747,20 +792,6 @@ h2 {
 }
 
 #eliminar {
-  background: none;
-  border: none;
-  align-items: center;
-  cursor: pointer;
-}
-
-#sumar {
-  background: none;
-  border: none;
-  align-items: center;
-  cursor: pointer;
-}
-
-#restar {
   background: none;
   border: none;
   align-items: center;

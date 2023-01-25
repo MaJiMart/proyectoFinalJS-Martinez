@@ -114,9 +114,5 @@ register.addEventListener("click", (e) => {
 
     } else {
         document.querySelector("#ops").innerText = "Ooops! Por favor completa el formulario correctamente"
-        setTimeout(() =>{
-            document.querySelector("#ops").innerText = ""
-        }, 2000)
-        
     }
 });

@@ -23,10 +23,54 @@
     .campo{
         background:none;
         width: 20rem;
-        margin: 10px;
+        margin: 10px 5px 10px;
         padding: 5px;
         border: none;
         border-bottom: solid $border;
+    }
+    .formControl{
+        display: flex;
+        flex-direction: row;
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+            
+            i{
+                visibility: hidden;
+                margin: 3.5px 3.5px 3.5px 0px;
+            }
+            p{
+                color: $border;
+                font-size: 0.8rem;
+                margin: 3px;
+                display: flex;
+                justify-content: center;
+                visibility: hidden;
+            }
+        }
+        
+    }
+    .formControlSuccess{
+        input{
+            border-color: $text;
+        }
+        i.fa-check{
+            visibility: visible;
+        }
+        
+    }
+    .formControlError{
+        div{
+            p{
+                visibility: visible;
+            }
+            i.fa-exclamation{
+                    visibility: visible;
+            }
+        }
+        
     }
 }
 

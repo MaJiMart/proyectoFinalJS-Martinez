@@ -15,10 +15,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Raleway:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/a442110d02.js" crossorigin="anonymous"></script>
     <!--link css-->
     <link rel="stylesheet" href="../scss/style.css">
     <!--logica js-->
     <script defer src="../js/registro.js"></script>
+    <script defer src="../js/validacion.js"></script>    
 </head>
 
 <body>
@@ -48,28 +51,48 @@
             <section>
                 <!--formulario de registro-->
                 <div class="formulario" id="formRegistro">
-                    <form action="#" autocomplete="off">
+                    <form id="form" action="#" autocomplete="off">
                         <h3>Completa con tus datos</h3>
-                        <div>
-                            <input type="text" placeholder="Nombre" class="campo" id="campoNom">
+                        <div class="formControl" id="grupoNom">
+                            <input type="text" placeholder="Nombre" name="campoNom" class="campo" id="campoNom">
+                            <div>
+                                <span style="color: #345911;"><i class="fa-solid fa-check"></i></span>
+                                <span style="color: #FF6333;"><i class="fa-solid fa-exclamation"></i></span>
+                                <p class="formControl error">No puedes dejarlo vacio ni incluir símbolos</p>
+                            </div>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Apellido" class="campo" id="campoApe">
+                        <div class="formControl" id="grupoApe">
+                            <input type="text" placeholder="Apellido" name="campoApe" class="campo" id="campoApe">
+                            <div>
+                                <span style="color: #345911;"><i class="fa-solid fa-check"></i></span>
+                                <span style="color: #FF6333;"><i class="fa-solid fa-exclamation"></i></span>
+                                <p class="formControl error">No puedes dejarlo vacio ni incluir símbolos</p>
+                            </div>
                         </div>
-                        <div>
-                            <input type="email" name="Email" placeholder="Email" class="campo" id="campoEmail">
+                        <div class="formControl" id="grupoEmail">
+                            <input type="email" placeholder="Email" name="campoEmail" class="campo" id="campoEmail">
+                            <div>
+                                <span style="color: #345911;"><i class="fa-solid fa-check"></i></span>
+                                <span style="color: #FF6333;"><i class="fa-solid fa-exclamation"></i></span>
+                                <p class="formControl error">Debes escribir algo@algo.com </p>
+                            </div>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Teléfono" class="campo" id="campoTel">
+                        <div class="formControl" id="grupoTel">
+                            <input type="text" placeholder="Teléfono" name="campoTel" class="campo" id="campoTel">
+                            <div>
+                                <span style="color: #345911;"><i class="fa-solid fa-check"></i></span>
+                                <span style="color: #FF6333;"><i class="fa-solid fa-exclamation"></i></span>
+                                <p class="formControl error">No admite símbolos ni letras</p>
+                            </div>
                         </div>
-                        <div>
-                            <input type="text" placeholder="Provincia" class="campo" id="campoProv">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="País" class="campo" id="campoPais">
-                        </div>
-                        <div>
-                            <input type="password" placeholder="Contraseña" class="campo" id="campoPass">
+                        <div class="formControl" id="grupoPass">
+                            <input type="password" placeholder="Contraseña" name="campoPass" class="campo"
+                                id="campoPass">
+                            <div>
+                                <span style="color: #345911;"><i class="fa-solid fa-check"></i></span>
+                                <span style="color: #FF6333;"><i class="fa-solid fa-exclamation"></i></span>
+                                <p class="formControl error">Debe tener entre 4 y 12 dígitos</p>
+                            </div>
                         </div>
                         <input type="submit" value="Registrarme" id="btnRegistro" alt="registrarme" />
                         <p>Para iniciar sesión <a href="../index.html">click aquí</a></p>
@@ -77,7 +100,9 @@
                 </div>
                 <div class="beneficios">
                     <p id="exitoso"></p>
-                    <p>Recuerda que al registrarte puedes acceder a sorteos y beneficios exclusivos que iremos comunicando por las redes sociales</p>
+                    <p id="ops"></p>
+                    <p>Recuerda que al registrarte puedes acceder a sorteos y beneficios exclusivos que iremos
+                        comunicando por las redes sociales</p>
                 </div>
             </section>
         </main>
@@ -101,6 +126,8 @@
             </div>
         </footer>
     </div>
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

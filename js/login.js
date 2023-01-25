@@ -7,11 +7,11 @@ const emailLogin = document.querySelector("#emailLogin"),
 function iniciar(user) {
     console.log(user)
     let buscarUsuario = user.find(usuario => {
-        return usuario.email === emailLogin.value && usuario.contraseña === passLogin.value;
+        return usuario.email == emailLogin.value && usuario.contraseña == passLogin.value;
     });
 
     //if/else con operadores avanzados
-buscarUsuario ? window.location.assign("./pages/tienda.html") : document.querySelector("#notfound").innerText = "El usuario no existe";
+buscarUsuario ? window.location.assign("./pages/tienda.html") : document.querySelector("#notfound").innerText = "Email o contraseña incorrectos";
 };
 
 
@@ -22,6 +22,7 @@ function recoverLS() {
 };
 
 const usuariosLS = recoverLS();
+
 
 //Evento
 login.addEventListener("click", (e) => {
