@@ -127,10 +127,13 @@ finCompra.addEventListener("click", () => {
                     icon: 'success',
                     title: 'Tu pedido ha sido realizado ¡Muchas gracias!',
                     showConfirmButton: false,
-                    timer: 2000,
+                    timer: 3000,
                 })
+                setTimeout(() =>{
                     localStorage.clear();
                     window.location.reload()
+                },2000)
+                    
             }
         })
     }
