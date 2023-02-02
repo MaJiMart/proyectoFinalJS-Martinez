@@ -55,6 +55,19 @@ function agregarCarrito(id) {
         carrito.push(item)
     }
 
+    Toastify({
+        text: "Producto agregado",
+        duration: 2500,
+        close: true,
+        gravity: "top", 
+        position: "right",
+        stopOnFocus: true,
+        style: {
+            background: "linear-gradient(to right, #FF6333, #EBDBC9)",
+        },
+        onClick: function(){}
+      }).showToast();
+
     mostrarCarrito()
 }
 
